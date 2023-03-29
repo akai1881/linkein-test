@@ -1,21 +1,10 @@
-import React, { useEffect } from 'react';
+// @ts-ignore
+import React from 'react';
 import noComment from './noComment1.png';
 import './App.css';
 import LinkedInPage from './Login/Login';
 
 function App() {
-
-  const handlePostMessage = (event: any) => {
-    if (event.data.type === "profile") {
-      updateProfile(event.data.profile);
-    }
-  };
-
-  const updateProfile = (profile: any) => {
-    console.log(profile)
-      
-  }
-
   return (
     <div className="App">
       <header className="App-header">
