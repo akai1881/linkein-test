@@ -16,15 +16,6 @@ function App() {
       
   }
 
-  
-  useEffect(() => {
-
-    window.addEventListener('message', handlePostMessage)
-    return () => {
-      window.removeEventListener('message', handlePostMessage)
-    }
-  }, [])
-
   return (
     <div className="App">
       <header className="App-header">
